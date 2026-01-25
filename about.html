@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | A.I.D.E Creative Solutions</title>
+    <link rel="icon" type="image/x-icon" href="public/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-hero {
+            text-align: center;
+            padding: 100px 0 60px;
+        }
+        
+        .about-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .about-hero p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            color: #cccccc;
+        }
+        
+        .founder-section {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin: 60px 0;
+            padding: 50px;
+            background-color: var(--card-dark);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .founder-image {
+            flex: 1;
+            max-width: 300px;
+        }
+        
+        .founder-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .founder-info {
+            flex: 2;
+        }
+        
+        .founder-info h3 {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        
+        .founder-title {
+            color: var(--accent);
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        
+        .values-section {
+            margin: 80px 0;
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .value-card {
+            background-color: var(--card-dark);
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .value-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(45deg, var(--primary-dark), var(--accent));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 32px;
+            color: white;
+        }
+        
+        .value-card h4 {
+            color: white;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+        
+        .process-section {
+            background-color: rgba(27, 0, 43, 0.5);
+            border-radius: 20px;
+            padding: 60px;
+            margin: 80px 0;
+        }
+        
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+            counter-reset: step-counter;
+        }
+        
+        .process-step {
+            position: relative;
+            padding-left: 70px;
+        }
+        
+        .process-step::before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(45deg, var(--primary-dark), var(--accent));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        
+        .process-step h4 {
+            color: white;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .process-step p {
+            color: #bbbbbb;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="public/images/logo_sml.png" alt="A.I.D.E Creative Solutions Logo" class="logo-img">
+                </a>
+                <div class="logo-text">A.I.D.E <span>Creative Solutions</span></div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="partners.html">Our Partners</a></li>
+                </ul>
+            </nav>
+            
+            <button class="cta-button" onclick="window.location.href='contact.html'">Get Started</button>
+        </div>
+    </header>
+
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>Our Story & Philosophy</h1>
+            <p>We started A.I.D.E Creative Solutions to provide real support for students facing academic challenges. Our mission is simple: help you succeed with quality work, clear communication, and reliable deadlines.</p>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="section">
+        <div class="container">
+            <div class="founder-section">
+                <div class="founder-image">
+                    <!-- Placeholder for founder image -->
+                    <div style="width: 100%; height: 300px; background: linear-gradient(135deg, var(--primary-dark), var(--accent)); border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-user-tie" style="font-size: 80px; color: white;"></i>
+                    </div>
+                </div>
+                <div class="founder-info">
+                    <h3>Meet David Rowe</h3>
+                    <div class="founder-title">Founder & Lead Consultant</div>
+                    <p style="color: #cccccc; margin-bottom: 20px; line-height: 1.8;">
+                        "I'm David Rowe, a Homework Consultant and Designer with a passion for helping students navigate academic challenges. I started A.I.D.E after seeing too many students struggle with overwhelming workloads, tight deadlines, and the pressure to produce perfect work."
+                    </p>
+                    <p style="color: #cccccc; margin-bottom: 20px; line-height: 1.8;">
+                        With experience in both academic support and creative design, I understand what it takes to produce work that not only meets requirements but exceeds expectations. My approach combines attention to detail with practical solutions that actually help students learn and succeed.
+                    </p>
+                    <p style="color: #cccccc; line-height: 1.8;">
+                        Education has always been important to me, and I believe every student deserves access to quality support when they need it most. That's why I built A.I.D.E – to be the reliable partner you can count on when the workload gets heavy.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Our Values -->
+            <div class="values-section">
+                <h2 class="section-title">What Drives Our Work</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h4>Quality First</h4>
+                        <p>We never compromise on quality. Every assignment, design, or edit receives careful attention to ensure it meets high academic and professional standards.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Reliability</h4>
+                        <p>Deadlines matter. We deliver on time, every time, so you can submit your work with confidence and avoid last-minute stress.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h4>Clear Communication</h4>
+                        <p>We keep you updated throughout the process. Your feedback matters, and we incorporate it to ensure the final product meets your needs.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Creative Solutions</h4>
+                        <p>We approach every project with creativity and innovation, finding the best way to present your ideas and make your work stand out.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h4>Student-Focused</h4>
+                        <p>We understand student life because we work with students every day. Our services are designed to fit your schedule, budget, and academic needs.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Confidentiality</h4>
+                        <p>Your privacy is important. We handle all projects with discretion and maintain strict confidentiality about our clients and their work.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Our Process -->
+            <div class="process-section">
+                <h2 class="section-title">How We Work With You</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <h4>Initial Consultation</h4>
+                        <p>We discuss your project requirements, deadline, and specific needs to create a clear plan of action.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <h4>Quote & Agreement</h4>
+                        <p>You receive a transparent quote with clear deliverables and timeline. No hidden fees or surprises.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <h4>Work in Progress</h4>
+                        <p>We begin working on your project, maintaining regular communication and providing updates as needed.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <h4>Review & Revisions</h4>
+                        <p>You review the work and request any changes. We make revisions until you're completely satisfied.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <h4>Final Delivery</h4>
+                        <p>You receive the final work, formatted and ready for submission, along with any additional guidance needed.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <h4>Ongoing Support</h4>
+                        <p>We remain available for any follow-up questions or clarifications even after project completion.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA Section -->
+            <div style="text-align: center; margin-top: 60px;">
+                <h3 style="color: white; margin-bottom: 20px; font-size: 1.8rem;">Ready to Work Together?</h3>
+                <p style="color: #bbbbbb; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Join the many students who have trusted A.I.D.E with their academic success. Let's create something great together.
+                </p>
+                <button class="cta-button" onclick="window.location.href='contact.html'" style="padding: 15px 40px; font-size: 1.1rem;">Start Your Project</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>A.I.D.E Creative Solutions</h4>
+                    <p class="footer-description">Academic and design support for students. We deliver quality work on schedule, so you can focus on what matters.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Homework Help</a></li>
+                        <li><a href="services.html">Proofreading</a></li>
+                        <li><a href="services.html">Graphic Design</a></li>
+                        <li><a href="services.html">Presentations</a></li>
+                        <li><a href="services.html">Video Editing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> aidecreatives@gmail.com</li>
+                        <li><i class="fab fa-whatsapp"></i> +1 (876) 296-1276</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Based in the United States</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 A.I.D.E Creative Solutions. All rights reserved. | Designed for David Rowe</p>
+                <p>This is a prototype website. Full dashboard functionality coming soon.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="logic.js"></script>
+</body>
+</html>
