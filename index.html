@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.I.D.E Creative Solutions | Professional Design & Content Services</title>
+    <link rel="icon" type="image/x-icon" href="public/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="public/images/logo_sml.png" alt="A.I.D.E Creative Solutions Logo" class="logo-img">
+                <div class="logo-text">A.I.D.E <span>Creative Solutions</span></div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#services" class="nav-link">Our Services</a></li>
+                    <li><a href="#pricing" class="nav-link">Our Prices</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonies</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Get Started</button>
+            
+            <button class="theme-toggle-btn" id="themeToggleBtn" title="Toggle dark/light mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Professional Creative Solutions for Your Success</h1>
+                <h2>Design, Content & Strategic Support</h2>
+                <p>At A.I.D.E Creative Solutions, we deliver polished, professional work that elevates your projects. From graphic design to custom content creation, we bring expertise and excellence to every deliverable.</p>
+                
+                <div class="hero-buttons">
+                    <button class="cta-button" onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' })">Explore Services</button>
+                    <button class="secondary-button" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Get a Quote</button>
+                </div>
+
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Professional Quality</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Fast Turnaround</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Affordable Pricing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive creative solutions tailored to your needs</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Graphic Design</h3>
+                    <p>Custom visuals for presentations, reports, infographics, and marketing materials. We create designs that communicate clearly and impress your audience.</p>
+                    <ul class="service-list">
+                        <li>Presentation Design</li>
+                        <li>Branding Materials</li>
+                        <li>Infographics</li>
+                        <li>Social Media Graphics</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3>Content Writing</h3>
+                    <p>Professional writing services for essays, reports, articles, and web content. We focus on clarity, structure, and engaging your audience.</p>
+                    <ul class="service-list">
+                        <li>Academic Writing</li>
+                        <li>Blog & Articles</li>
+                        <li>Web Copy</li>
+                        <li>Editing & Proofreading</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-presentation-screen"></i>
+                    </div>
+                    <h3>Presentations</h3>
+                    <p>Polished, engaging presentations that communicate your ideas with impact. Expert design, professional layouts, and compelling visuals.</p>
+                    <ul class="service-list">
+                        <li>PowerPoint Design</li>
+                        <li>Corporate Presentations</li>
+                        <li>Educational Materials</li>
+                        <li>Animations & Effects</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Editing</h3>
+                    <p>Professional video editing that brings your content to life. Clean cuts, smooth transitions, and polished final deliverables.</p>
+                    <ul class="service-list">
+                        <li>Video Editing</li>
+                        <li>Motion Graphics</li>
+                        <li>Color Correction</li>
+                        <li>Audio Enhancement</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Research & Analysis</h3>
+                    <p>In-depth research, data analysis, and report writing. We gather insights and present findings in clear, compelling formats.</p>
+                    <ul class="service-list">
+                        <li>Research Papers</li>
+                        <li>Data Analysis</li>
+                        <li>Report Writing</li>
+                        <li>Literature Reviews</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Strategic Consulting</h3>
+                    <p>Expert guidance on project strategy, planning, and execution. We help you approach your work with clarity and confidence.</p>
+                    <ul class="service-list">
+                        <li>Project Planning</li>
+                        <li>Quality Reviews</li>
+                        <li>Feedback & Revision</li>
+                        <li>Best Practices</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Our Prices</h2>
+            <p class="section-subtitle">Flexible pricing plans to fit your budget</p>
+            
+            <div class="pricing-grid">
+                <!-- Starter Plan -->
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <div class="price">$500 <span>JMD</span></div>
+                    <p class="price-desc">Perfect for single projects</p>
+                    
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> One service (design, writing, or editing)</li>
+                        <li><i class="fas fa-check"></i> Up to 2 revisions</li>
+                        <li><i class="fas fa-check"></i> 48-72 hour turnaround</li>
+                        <li><i class="fas fa-times"></i> Email support only</li>
+                    </ul>
+                    
+                    <button class="secondary-button full-width">Choose Plan</button>
+                </div>
+
+                <!-- Professional Plan (Featured) -->
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3>Professional</h3>
+                    <div class="price">$1,500 <span>JMD</span></div>
+                    <p class="price-desc">Ideal for comprehensive projects</p>
+                    
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Multiple services combined</li>
+                        <li><i class="fas fa-check"></i> Up to 5 revisions</li>
+                        <li><i class="fas fa-check"></i> 24-48 hour turnaround</li>
+                        <li><i class="fas fa-check"></i> Priority email & phone support</li>
+                        <li><i class="fas fa-check"></i> Quality assurance included</li>
+                    </ul>
+                    
+                    <button class="cta-button full-width">Choose Plan</button>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="pricing-card">
+                    <h3>Premium</h3>
+                    <div class="price">$2,500+ <span>JMD</span></div>
+                    <p class="price-desc">For complex or urgent needs</p>
+                    
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited services & revisions</li>
+                        <li><i class="fas fa-check"></i> Same-day turnaround available</li>
+                        <li><i class="fas fa-check"></i> 24/7 priority support</li>
+                        <li><i class="fas fa-check"></i> Dedicated project manager</li>
+                        <li><i class="fas fa-check"></i> Custom solutions</li>
+                    </ul>
+                    
+                    <button class="secondary-button full-width">Choose Plan</button>
+                </div>
+            </div>
+
+            <div class="pricing-note">
+                <p><strong>Need something custom?</strong> Contact us for a personalized quote tailored to your specific requirements.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">About A.I.D.E Creative Solutions</h2>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <h3>Your Creative Partner for Professional Excellence</h3>
+                    <p>A.I.D.E Creative Solutions was founded on a simple belief: exceptional creative work should be accessible, affordable, and delivered with integrity.</p>
+                    
+                    <p>We specialize in delivering high-quality design, content creation, and strategic support across multiple disciplines. Whether you're a student managing demanding coursework, a professional building a portfolio, or a business strengthening your brand presence, we provide solutions tailored to your unique needs.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h4>500+</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>100%</h4>
+                            <p>Client Satisfaction</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>24/7</h4>
+                            <p>Support Available</p>
+                        </div>
+                    </div>
+
+                    <p>Our commitment is simple: deliver work that you're proud to present, every single time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Testimonies</h2>
+            <p class="section-subtitle">What our clients are saying about us</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"A.I.D.E delivered exceptional work on my presentation. The design was professional, creative, and exactly what I needed. Highly recommend!"</p>
+                    <div class="testimonial-author">
+                        <h4>Sarah M.</h4>
+                        <p>Business Professional</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Fast turnaround, excellent quality, and the team was responsive to feedback. This is the kind of service you can count on consistently."</p>
+                    <div class="testimonial-author">
+                        <h4>James R.</h4>
+                        <p>Academic Researcher</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"I was impressed with the professionalism and attention to detail. They turned my rough ideas into polished, impressive deliverables."</p>
+                    <div class="testimonial-author">
+                        <h4>Maria T.</h4>
+                        <p>Content Creator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Ready to get started? Reach out to us today</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>aidecreatives@gmail.com</p>
+                            <p class="contact-desc">Send us your inquiry anytime</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>WhatsApp & Phone</h4>
+                            <p>+1 (876) 296-1276</p>
+                            <p class="contact-desc">Quick response for urgent inquiries</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Working Hours</h4>
+                            <p>Monday - Friday: 9am - 7pm EST</p>
+                            <p class="contact-desc">Saturday: 10am - 4pm EST</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Support</h4>
+                            <p>Always here to help</p>
+                            <p class="contact-desc">Response within 12 hours guaranteed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <div class="contact-form">
+                    <h3>Request a Quote</h3>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdjk1nPl9u4FbExWD_0ZZeJKUFuMU9KiAb6vYRzgEJ4HGiT6w/viewform?embedded=true" width="100%" height="1999" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Elevate Your Projects?</h2>
+            <p>Let's work together to create something exceptional</p>
+            <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Get Started Today</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>A.I.D.E Creative Solutions</h4>
+                    <p class="footer-description">Professional creative and content services. We deliver quality work on schedule, every time.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#pricing">Our Prices</a></li>
+                        <li><a href="#testimonials">Testimonies</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Graphic Design</a></li>
+                        <li><a href="#services">Content Writing</a></li>
+                        <li><a href="#services">Presentations</a></li>
+                        <li><a href="#services">Video Editing</a></li>
+                        <li><a href="#services">Research & Analysis</a></li>
+                        <li><a href="#services">Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> aidecreatives@gmail.com</li>
+                        <li><i class="fab fa-whatsapp"></i> +1 (876) 296-1276</li>
+                        <li><i class="fas fa-clock"></i> 24/7 Support Available</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 A.I.D.E Creative Solutions. All rights reserved.</p>
+                <p>Delivering professional creative solutions with excellence and integrity.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script defer src="logic.js"></script>
+</body>
+</html>
